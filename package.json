@@ -3,16 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "deploy": "npm run build && npm run export",
+    "start": "next start"
   },
   "dependencies": {
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
+    "formik": "^2.4.1",
     "next": "13.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "styled-components": "^5.3.10",
+    "swiper": "^9.2.4",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.1"
   }
 }
