@@ -4,9 +4,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  images: {
+  /* images: {
     unoptimized: true,
-  }
+  } */
 }
 
 module.exports = nextConfig
