@@ -149,7 +149,7 @@ export const recipes = [
         difficulty: "Fácil",
         diners: "4 pers.",
         favorites: false,
-        description: "Nos atrevemos a decir que los espaguetis con marisco o, como los llaman los italianos, los spaguetti ai frutti di mare.",
+        description: "Nos atrevemos a decir que los espaguetis con marisco o, como los llaman los italianos, los spaguetti ai frutti di mare, es un plato delicioso y fácil de preparar.",
         ingredients: ["400 g. de espaguetis", "24 langostinos", "24 mejillones", "20 almejas frescas", "1 cebolla", "4 diente de ajo", "150 ml de vino blanco seco", "4 tomates pequeños", "Aceite de oliva virgen extra", "Sal y pimienta negra recién molida", "Perejil fresco picado"],
         steps: [
             "Para limpiar las almejas. Bajo un chorro de agua fría lavamos las almejas al tiempo que frotamos las cochas con un cepillo, suavemente. Las depositamos en un recipiente con abundante agua y sal, lo cubrimos con un paño y las dejamos reposar un par de horas en la nevera. Si hace calor las metemos en la nevera, si hace frío no hay necesidad.",

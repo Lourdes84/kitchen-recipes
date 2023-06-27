@@ -19,12 +19,6 @@ export const ImageWrapper = styled.div`
     position: relative;
     transition: transform .3s;
     
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
     &:hover {
         transform: scale(1.1);
     }

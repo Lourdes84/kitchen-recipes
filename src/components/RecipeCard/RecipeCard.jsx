@@ -6,6 +6,7 @@ import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import LinkButton from '../LinkButton/LinkButton'
 import { useEffect, useState } from 'react'
 import BadgeIcon from '../BadgeIcon/BadgeIcon'
+import Image from 'next/image'
 
 const RecipeCard = ({ data }) => {
     const [ filtered, setFiltered ] = useState(false)
@@ -20,7 +21,7 @@ const RecipeCard = ({ data }) => {
     return (
         <RecipeCardWrapper>
             <ImageWrapper>
-                <img src={data.img} alt="recipe" />
+                <Image src={data.img} width={450} height={300} style={{objectFit:"cover"}} alt={data.title} />
             </ImageWrapper>
             <InfoWrapper>
                 <h2>{data.title}</h2>

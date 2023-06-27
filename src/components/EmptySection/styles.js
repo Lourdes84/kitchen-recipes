@@ -26,7 +26,6 @@ export const ImageWrapper = styled.div`
         left: 0;
     }
    
-
     img {
         border-radius: 50%;
         display: block;
