@@ -7,19 +7,19 @@ const RecipeSteps = ({ recipe }) => {
         <>
             <IngredientsWrapper>
                 <ImageWrapper>
-                    <img src={recipe.img} alt={recipe.title} />
+                    <img src={recipe?.img} alt={recipe?.title} />
                 </ImageWrapper>
                 <InfoWrapper>
                     <BadgesWrapper>
-                        <Badge text={recipe.category} />
-                        <Badge text={recipe.difficulty} />
-                        <BadgeIcon timeCooking text={recipe.time} />
-                        <BadgeIcon diners text={recipe.diners} />
+                        <Badge text={recipe?.category} />
+                        <Badge text={recipe?.difficulty} />
+                        <BadgeIcon timeCooking text={recipe?.time} />
+                        <BadgeIcon diners text={recipe?.diners} />
                     </BadgesWrapper>
 
                     <h2>Ingredientes:</h2>
                     <div>
-                        {recipe.ingredients.map((ingredient, index) => (
+                        {recipe?.ingredients.map((ingredient, index) => (
                             <ul key={index}>
                                 <li>- {ingredient}</li>
                             </ul>
@@ -32,7 +32,7 @@ const RecipeSteps = ({ recipe }) => {
                 <div>
                     <h2>Elaboración:</h2>
                     <ul>
-                        {recipe.steps.map((step, index) => (
+                        {recipe?.steps.map((step, index) => (
                             <List key={index}>
                                 <NumberStep>{index + 1}</NumberStep>
                                 {step}

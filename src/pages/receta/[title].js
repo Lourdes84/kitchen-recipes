@@ -20,7 +20,7 @@ const Receta = () => {
         return pages[category] || "/"
     }
 
-    const url = getPageRecipe(recipe.category)
+    const url = getPageRecipe(recipe?.category)
 
     return (
         <>
