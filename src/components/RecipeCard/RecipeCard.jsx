@@ -13,7 +13,7 @@ const RecipeCard = ({ data }) => {
 
     useEffect(() => {
         const favorites = JSON.parse(localStorage.getItem("favorites"))
-        const isFavorites = favorites.some(favorite => favorite.id === data.id)
+        const isFavorites = favorites?.some(favorite => favorite.id === data.id)
         setFiltered(isFavorites)
     }, [data.id])
 
