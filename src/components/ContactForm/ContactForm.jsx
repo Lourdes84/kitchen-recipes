@@ -32,7 +32,7 @@ const ContactForm = () => {
 
         <ContactWrapper>
             <ImageWrapper>
-                <img src="/images/contact.jpg" alt="contact" />
+                <img src="/images/contact.webp" alt="contact" />
             </ImageWrapper>
             <FormWrapper>
                 <HeaderWrapper>

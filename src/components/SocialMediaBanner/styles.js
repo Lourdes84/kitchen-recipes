@@ -16,7 +16,7 @@ export const BannerWrapper = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/images/parallax.jpg");
+    background-image: url("/images/parallax.webp");
 
     @media(max-width: 940px){
         height: 400px;

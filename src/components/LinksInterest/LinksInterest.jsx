@@ -6,22 +6,22 @@ const LinksInterest = () => {
     const linkOptions = [
         {
             url: "https://www.recetasderechupete.com/",
-            img: "recetas-rechupete.png",
+            img: "recetas-rechupete.webp",
             alt: "Recetas de rechupete"
         },
         {
             url: "https://www.recetasgratis.net/",
-            img: "recetas-gratis.png",
+            img: "recetas-gratis.webp",
             alt: "Recetas gratis"
         },
         {
             url: "https://www.directoalpaladar.com/",
-            img: "directo-paladar.png",
+            img: "directo-paladar.webp",
             alt: "Directo al paladar"
         },
         {
             url: "https://maille.com.es/",
-            img: "maille.png",
+            img: "maille.webp",
             alt: "Maille"
         }
     ]

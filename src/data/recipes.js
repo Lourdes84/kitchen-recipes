@@ -2,7 +2,7 @@ export const recipes = [
     {
         id: 0,
         title: "Tiramisú",
-        img: "/images/postres/sweet-01.jpg",
+        img: "/images/postres/sweet-01.webp",
         category: "Postre",
         time: "30 min",
         difficulty: "media",
@@ -23,7 +23,7 @@ export const recipes = [
     {   
         id: 1,
         title: "Lemon pie",
-        img: "/images/postres/sweet-02.jpg",
+        img: "/images/postres/sweet-02.webp",
         category: "Postre",
         time: "90 min",
         difficulty: "media",
@@ -54,7 +54,7 @@ export const recipes = [
     {
         id: 2,
         title: "Brownie",
-        img: "/images/postres/sweet-03.jpg",
+        img: "/images/postres/sweet-03.webp",
         category: "Postre",
         time: "120 min",
         difficulty: "Fácil",
@@ -73,7 +73,7 @@ export const recipes = [
     {
         id: 3,
         title: "Cheesecake",
-        img: "/images/postres/sweet-04.jpg",
+        img: "/images/postres/sweet-04.webp",
         category: "Postre",
         time: "60 min",
         difficulty: "Fácil",
@@ -101,7 +101,7 @@ export const recipes = [
     {
         id: 4,
         title: "Mousse de chocolate",
-        img: "/images/postres/sweet-05.jpg",
+        img: "/images/postres/sweet-05.webp",
         category: "Postre",
         time: "20 min",
         difficulty: "Fácil",
@@ -120,7 +120,7 @@ export const recipes = [
     {
         id: 5,
         title: "Pastel de zanahoria",
-        img: "/images/postres/sweet-06.jpg",
+        img: "/images/postres/sweet-06.webp",
         category: "Postre",
         time: "65 min",
         difficulty: "Fácil",
@@ -143,7 +143,7 @@ export const recipes = [
     {
         id: 6,
         title: "Espaguetis fruti di mare",
-        img: "/images/popular/popular-01.jpg",
+        img: "/images/popular/popular-01.webp",
         category: "Popular",
         time: "40 min",
         difficulty: "Fácil",
@@ -169,7 +169,7 @@ export const recipes = [
     {
         id: 7,
         title: "Gyozas de cerdo",
-        img: "/images/popular/popular-02.jpg",
+        img: "/images/popular/popular-02.webp",
         category: "Popular",
         time: "40 min",
         difficulty: "Fácil",
@@ -190,7 +190,7 @@ export const recipes = [
     {
         id: 8,
         title: "Ramen",
-        img: "/images/popular/popular-03.jpg",
+        img: "/images/popular/popular-03.webp",
         category: "Popular",
         time: "300 min",
         difficulty: "Media",
@@ -214,7 +214,7 @@ export const recipes = [
     {
         id: 9,
         title: "Lasaña",
-        img: "/images/popular/popular-04.jpg",
+        img: "/images/popular/popular-04.webp",
         category: "Popular",
         time: "55 min",
         difficulty: "Media",
@@ -242,7 +242,7 @@ export const recipes = [
     {
         id: 10,
         title: "Pollo tikka masala",
-        img: "/images/healthy/healthy-01.jpg",
+        img: "/images/healthy/healthy-01.webp",
         category: "Healthy",
         time: "60 min",
         difficulty: "Fácil",
@@ -269,7 +269,7 @@ export const recipes = [
     {
         id: 11,
         title: "Pollo en salsa de almendras",
-        img: "/images/healthy/healthy-02.jpg",
+        img: "/images/healthy/healthy-02.webp",
         category: "Healthy",
         time: "60 min",
         difficulty: "Fácil",
@@ -292,7 +292,7 @@ export const recipes = [
     {
         id: 12,
         title: "Poke de salmón",
-        img: "/images/healthy/healthy-03.jpg",
+        img: "/images/healthy/healthy-03.webp",
         category: "Healthy",
         time: "75 min",
         difficulty: "Fácil",
@@ -315,7 +315,7 @@ export const recipes = [
     {
         id: 13,
         title: "Conejo estofado",
-        img: "/images/healthy/healthy-04.jpg",
+        img: "/images/healthy/healthy-04.webp",
         category: "Healthy",
         time: "60 min",
         difficulty: "Fácil",
@@ -335,7 +335,7 @@ export const recipes = [
     {
         id: 14,
         title: "Tartar de atún",
-        img: "/images/healthy/healthy-05.jpg",
+        img: "/images/healthy/healthy-05.webp",
         category: "Healthy",
         time: "30 min",
         difficulty: "Fácil",
@@ -357,7 +357,7 @@ export const recipes = [
     {
         id: 15,
         title: "Brochetas de pollo yakitori",
-        img: "/images/healthy/healthy-06.jpg",
+        img: "/images/healthy/healthy-06.webp",
         category: "Healthy",
         time: "20 min",
         difficulty: "Fácil",
@@ -377,7 +377,7 @@ export const recipes = [
     {
         id: 16,
         title: "Albóndigas vegetarianas con tomate",
-        img: "/images/vegetarianas/vegetarian-01.jpg",
+        img: "/images/vegetarianas/vegetarian-01.webp",
         category: "Vegetariana",
         time: "30 min",
         difficulty: "Fácil",
@@ -400,7 +400,7 @@ export const recipes = [
     {
         id: 17,
         title: "Arroz salteado con verduras",
-        img: "/images/vegetarianas/vegetarian-02.jpg",
+        img: "/images/vegetarianas/vegetarian-02.webp",
         category: "Vegetariana",
         time: "30 min",
         difficulty: "Fácil",
@@ -417,7 +417,7 @@ export const recipes = [
     {
         id: 18,
         title: "Frittata de verduras y queso de cabra",
-        img: "/images/vegetarianas/vegetarian-03.jpg",
+        img: "/images/vegetarianas/vegetarian-03.webp",
         category: "Vegetariana",
         time: "60 min",
         difficulty: "Fácil",
@@ -441,7 +441,7 @@ export const recipes = [
     {
         id: 19,
         title: "Hamburguesa de patata y tofu",
-        img: "/images/vegetarianas/vegetarian-04.jpg",
+        img: "/images/vegetarianas/vegetarian-04.webp",
         category: "Vegetariana",
         time: "40 min",
         difficulty: "media",
@@ -463,7 +463,7 @@ export const recipes = [
     {
         id: 19,
         title: "Quesadillas vegetarianas",
-        img: "/images/vegetarianas/vegetarian-05.jpg",
+        img: "/images/vegetarianas/vegetarian-05.webp",
         category: "Vegetariana",
         time: "25 min",
         difficulty: "media",
@@ -481,7 +481,7 @@ export const recipes = [
     {
         id: 20,
         title: "Croquetas de berengena",
-        img: "/images/vegetarianas/vegetarian-06.jpg",
+        img: "/images/vegetarianas/vegetarian-06.webp",
         category: "Vegetariana",
         time: "60 min",
         difficulty: "Fácil",

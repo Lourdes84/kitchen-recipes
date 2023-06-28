@@ -85,7 +85,7 @@ const Header = () => {
         <HeaderWrapper>
             <NavWrapper>
                 <ImageWrapper>
-                    <img src="/images/logo.jpg" alt="logo" />
+                    <img src="/images/logo.webp" alt="logo" />
                 </ImageWrapper>
                     {isSmallScreen && <Icon as={menuIcon} onClick={() => setShowResponsiveMenu(!showResponsiveMenu)} /> }
                         <StyledNav className={showResponsiveMenu ? "show-responsive" : ""}>

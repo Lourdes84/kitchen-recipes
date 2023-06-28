@@ -5,12 +5,12 @@ const EmptySection = ({ text, emptyContent, inConstruction}) => {
         <EmptyWrapper>
             {emptyContent && (
                 <ImageWrapper>
-                    <img src="/images/empty.jpg" alt="Nada agregado" />
+                    <img src="/images/empty.webp" alt="Nada agregado" />
                 </ImageWrapper>
             )}
             {inConstruction && (
                 <div>
-                    <img src="/images/under-construction.png" alt="En construcción" />
+                    <img src="/images/under-construction.webp" alt="En construcción" />
                 </div>
             )}
             <StyledText bottomText={inConstruction}>{text}</StyledText>

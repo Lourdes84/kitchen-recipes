@@ -11,22 +11,22 @@ const Slider = () => {
     const options = [
         {
             title: "Desayunos",
-            img: "foodOptions-01.jpg",
+            img: "foodOptions-01.webp",
             url: "/comidas/desayunos"
         },
         {
             title: "Almuerzos",
-            img: "foodOptions-02.jpg",
+            img: "foodOptions-02.webp",
             url: "/comidas/almuerzos"
         },
         {
             title: "Meriendas",
-            img: "foodOptions-03.jpg",
+            img: "foodOptions-03.webp",
             url: "/comidas/meriendas"
         },
         {
             title: "Cenas",
-            img: "foodOptions-04.jpg",
+            img: "foodOptions-04.webp",
             url: "/comidas/cenas"
         },
     ]

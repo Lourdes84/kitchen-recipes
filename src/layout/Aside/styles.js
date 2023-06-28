@@ -9,7 +9,7 @@ export const AsideWrapper = styled.aside`
 `
 
 export const Block = styled.div`
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 `
 
 export const Title = styled.div`
@@ -42,6 +42,7 @@ export const ImageWrapper = styled.div`
 
 export const PostWrapper = styled.div`
     display: ${(props) => props.profileWrapper ? "block" : "flex"};
+    margin-top: ${(props) => props.profileWrapper && "30px"};
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
