@@ -23,11 +23,8 @@ export const ImageWrapper = styled.div`
 `
 export const BadgesWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-
-    @media (max-width: 616px) {
-        flex-direction: column;
-    }
 `
 
 export const InfoWrapper = styled.div`
@@ -41,9 +38,6 @@ export const InfoWrapper = styled.div`
 
      @media (max-width: 1560px) {
         width: 100%;
-    }
-     @media (max-width: 616px) {
-        height: 500px;
     }
 `
 

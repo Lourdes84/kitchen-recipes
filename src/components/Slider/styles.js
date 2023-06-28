@@ -33,7 +33,6 @@ export const FoodOptionsWrapper = styled.div`
 
     @media (max-width: 1200px) {
         width: 90%;
-    
     }
 `
 export const StyledLink = styled(Link)`

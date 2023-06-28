@@ -18,6 +18,12 @@ export const ImageWrapper = styled.div`
     overflow: hidden;
     position: relative;
     transition: transform .3s;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     
     &:hover {
         transform: scale(1.1);
@@ -26,6 +32,7 @@ export const ImageWrapper = styled.div`
 
 export const WidgetWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 `
 
