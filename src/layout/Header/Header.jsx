@@ -27,7 +27,10 @@ const Header = () => {
     }, [] )
 
     useEffect(() => {
-        const handleScroll = () => setShowResponsiveMenu(false)
+        const handleScroll = () => {
+            setShowResponsiveMenu(false)
+            setShowDropdown(false)
+        }
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [] )
@@ -76,6 +79,11 @@ const Header = () => {
         },
     ]
 
+    const handleMenuIconClick = () => {
+        setShowResponsiveMenu(!showResponsiveMenu)
+        setShowDropdown(false)
+    }
+
     const handleLinkClick = () => {
         setShowResponsiveMenu(false)
         setShowDropdown(false)
@@ -84,7 +92,7 @@ const Header = () => {
     return (
         <HeaderWrapper>
             <NavWrapper>
-                {isSmallScreen && <Icon as={menuIcon} onClick={() => setShowResponsiveMenu(!showResponsiveMenu)} /> }
+                {isSmallScreen && <Icon as={menuIcon} onClick={handleMenuIconClick} /> }
                 <ImageWrapper>
                     <img src="/images/logo.webp" alt="logo" />
                 </ImageWrapper>
