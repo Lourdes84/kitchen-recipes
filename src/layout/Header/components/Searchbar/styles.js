@@ -13,8 +13,8 @@ export const SearchBarWrapper = styled.div`
 `
 
 export const StyledInput = styled.input`
-    width: 90%;
+    width: ${props => props.isSmallScreen ? '0px' : '90%'};
     height: 25px;
     border: none;
-    padding-left: 10px;
+    padding-left: ${props => props.isSmallScreen ? '0px' : '10px'};
 `

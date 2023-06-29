@@ -6,7 +6,7 @@ import { SliderWrapper, ImageSlide, FoodOptionsWrapper, StyledLink, FoodOptions,
 
 const Slider = () => {
 
-    const images = [ "slider-01.jpg", "slider-02.jpg", "slider-03.jpg", "slider-04.jpg", "slider-05.jpg" ]
+    const images = [ "slider-01.webp", "slider-02.webp", "slider-03.webp", "slider-04.webp", "slider-05.webp" ]
     
     const options = [
         {

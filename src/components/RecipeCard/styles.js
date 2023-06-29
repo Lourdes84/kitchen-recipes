@@ -10,6 +10,10 @@ export const RecipeCardWrapper = styled.div`
     padding-bottom: 30px;
     border-bottom: 2px solid #000;
     overflow: hidden;
+
+    @media( max-width: 1357px) {
+        height: auto;
+    }
 `
 
 export const ImageWrapper = styled.div`

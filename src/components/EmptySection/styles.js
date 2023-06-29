@@ -5,7 +5,6 @@ export const EmptyWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 500px;
 `
 
@@ -34,8 +33,6 @@ export const ImageWrapper = styled.div`
 `
 
 export const StyledText = styled.h2`
-    position: absolute;
-    bottom: ${(props => props.bottomText ? '-60px': '50px')};
     display: inline-block;
     color: #FDC257;
     text-align: center;

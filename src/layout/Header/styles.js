@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.header`
 export const ImageWrapper = styled.div`
     width: 150px;
 
-     @media (max-width: 768px) {
+     @media (max-width: 1200px) {
         width: 100px;
         position: relative;
     }
@@ -28,9 +28,8 @@ export const NavWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         width: 80%;
-        flex-direction: row-reverse;
     }
 `
 
@@ -42,7 +41,7 @@ export const LinksWrapper = styled.ul`
     text-transform: uppercase;
     letter-spacing: 2px;
  
-   @media (max-width: 768px) {
+   @media (max-width: 1200px) {
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
@@ -73,7 +72,7 @@ export const StyledLink = styled(Link)`
         transform: scaleX(1);
         transform-origin: bottom left;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         color: #000;
     }
 
@@ -89,7 +88,7 @@ export const StyledDropdown = styled.ul`
     position: absolute;
     z-index: 100;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         display: none;
         position: relative;
 
@@ -98,7 +97,7 @@ export const StyledDropdown = styled.ul`
             margin-top: 20px;
         }
     }
-     @media (min-width: 768px) {
+     @media (min-width: 1200px) {
         opacity: 0;
         visibility: hidden;
         transform: translateY(80px);
@@ -112,7 +111,7 @@ export const StyledDropdown = styled.ul`
     }
 `
 export const StyledNav = styled.nav`
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         width: 280px;
         height: 89vh;
         background-color: #fff;
@@ -144,9 +143,5 @@ export const StyledLinkDropdown = styled.li`
 `
 
 export const SearchBarWrapper = styled.div`
-    width: 300px;
-
-    @media (max-width: 1330px) {
-        width: 200px;
-    }
-`
+    width: ${props => props.isBigScreen && '300px'};
+` 

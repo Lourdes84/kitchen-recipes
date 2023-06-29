@@ -4,7 +4,7 @@ import { RxCross2 } from 'react-icons/rx'
 import { useContext, useState } from 'react'
 import { SearchContext } from '@/context/SearchContext'
 
-const Searchbar = ({ placeholder, disabled }) => {
+const Searchbar = ({ placeholder, isSmallScreen, disabled }) => {
     const [ query, setQuery ] = useState("")
     const [ showCrossIcon, setShowCrossIcon ] = useState(false)
     const { search } = useContext(SearchContext)
@@ -39,7 +39,8 @@ const Searchbar = ({ placeholder, disabled }) => {
     return (
         <SearchBarWrapper>
             <StyledInput 
-                type="text" 
+                type="text"
+                isSmallScreen={isSmallScreen}
                 placeholder={placeholder} 
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}

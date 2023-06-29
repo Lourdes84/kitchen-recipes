@@ -20,7 +20,7 @@ const Header = () => {
     const menuIcon = showResponsiveMenu ? MdOutlineRestaurantMenu : RiMenuUnfoldFill 
     
     useEffect(() => {
-        const handleResize = () => setIsSmallScreen(window.innerWidth < 768)
+        const handleResize = () => setIsSmallScreen(window.innerWidth < 1200)
         window.addEventListener('resize', handleResize)
         handleResize()
         return () => window.removeEventListener('resize', handleResize)
@@ -84,19 +84,12 @@ const Header = () => {
     return (
         <HeaderWrapper>
             <NavWrapper>
+                {isSmallScreen && <Icon as={menuIcon} onClick={() => setShowResponsiveMenu(!showResponsiveMenu)} /> }
                 <ImageWrapper>
                     <img src="/images/logo.webp" alt="logo" />
                 </ImageWrapper>
-                    {isSmallScreen && <Icon as={menuIcon} onClick={() => setShowResponsiveMenu(!showResponsiveMenu)} /> }
                         <StyledNav className={showResponsiveMenu ? "show-responsive" : ""}>
                             <LinksWrapper>
-                               {isSmallScreen && (
-                                    <Searchbar 
-                                        blackTheme 
-                                        placeholder="Buscar nombre receta" 
-                                        disabled={isContactPage} 
-                                    />
-                                )} 
                                 {linkOptions.map((link, index) => 
                                     <li key={index}>
                                         <StyledLink 
@@ -125,14 +118,13 @@ const Header = () => {
                                 )}    
                             </LinksWrapper>
                         </StyledNav>
-                        {!isSmallScreen && (
-                            <SearchBarWrapper>
-                                <Searchbar 
-                                    placeholder="Buscar nombre receta" 
-                                    disabled={isContactPage} 
-                                />
-                            </SearchBarWrapper>
-                        )}       
+                        <SearchBarWrapper isBigScreen={!isSmallScreen}>
+                            <Searchbar 
+                                placeholder="Buscar nombre receta"
+                                isSmallScreen={isSmallScreen} 
+                                disabled={isContactPage} 
+                            />
+                        </SearchBarWrapper>    
             </NavWrapper>
         </HeaderWrapper>
     )
