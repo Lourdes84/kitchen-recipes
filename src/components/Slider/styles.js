@@ -26,13 +26,18 @@ export const FoodOptionsWrapper = styled.div`
     gap: 10px;
     z-index: 10;
 
-    @media (max-width: 550px) {
+    @media (max-width: 1070px) {
         flex-wrap: wrap;
-        bottom: -460px;
+        bottom: -230px;
+        width: 70%;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 729px) {
         width: 90%;
+    }
+
+    @media (max-width: 640px) {
+        bottom: -460px;
     }
 `
 export const StyledLink = styled(Link)`
@@ -41,12 +46,8 @@ export const StyledLink = styled(Link)`
     height: 150px;
 
     @media (max-width: 640px) {
-        width: 200px;
-        height: 100px;
-    }
-
-    @media (max-width: 550px) {
         width: 100%;
+        height: 100px;
     }
 `
 export const FoodOptions = styled.div`
@@ -61,12 +62,8 @@ export const FoodOptions = styled.div`
     cursor: pointer;
 
     @media (max-width: 640px) {
-        width: 200px;
-        height: 100px;
-    }
-
-    @media (max-width: 550px) {
         width: 100%;
+        height: 100px;
     }
 `
 export const ImageOption = styled.img`
@@ -88,8 +85,8 @@ export const TitleOption = styled.div`
     border-radius: 15px;
     font-weight: 400;
     z-index: 1;
-
-     @media (max-width: 640px) {
+     
+    @media (max-width: 640px) {
         font-size: 16px;
     }
 `

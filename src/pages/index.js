@@ -56,7 +56,11 @@ const Home = () => {
                 flex-direction: column;
               }
 
-              @media (max-width: 549px) {
+              @media (max-width: 1070px) {
+                margin-top: 260px;
+              }
+
+              @media (max-width: 640px) {
                 margin-top: 500px;
               }
             }
