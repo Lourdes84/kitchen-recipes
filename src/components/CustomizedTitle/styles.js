@@ -32,4 +32,8 @@ export const StyledTitle = styled.h1`
     color: transparent; 
     padding: 5px 0;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3); 
+
+    @media(max-width: 438px){
+        font-size: 25px;
+    }
 `
