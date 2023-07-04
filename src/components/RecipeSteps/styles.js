@@ -18,8 +18,13 @@ export const ImageWrapper = styled.div`
     overflow: hidden;
 
      img {
+        object-fit: cover;
         height: 100%;
      }
+
+    @media (max-width: 1560px) {
+        height: auto;
+    }
 `
 export const BadgesWrapper = styled.div`
     display: flex;
@@ -32,9 +37,9 @@ export const InfoWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    height: 400px;
-    padding: 0px 20px;
+    padding: 20px;
     background-color: #fff;
+    line-height: 1.5;
 
      @media (max-width: 1560px) {
         width: 100%;
