@@ -3,7 +3,7 @@ import { BsFillHeartbreakFill } from 'react-icons/bs'
 
 export const CardWrapper = styled.article`
     width: 350px;
-    height: 510px;
+    height: 530px;
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
@@ -13,6 +13,10 @@ export const CardWrapper = styled.article`
 
     &:hover {
         box-shadow: none;
+    }
+
+    @media (max-width: 414px) {
+        height: 560px;
     }
 `
 
@@ -54,6 +58,7 @@ export const InfoWrapper = styled.div`
     flex: 50%;
     padding: 20px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
