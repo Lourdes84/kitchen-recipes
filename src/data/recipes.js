@@ -376,7 +376,7 @@ export const recipes = [
     },
     {
         id: 16,
-        title: "Albóndigas vegetarianas con tomate",
+        title: "Albóndigas vegetarianas",
         img: "/images/vegetarianas/vegetarian-01.webp",
         category: "Vegetariana",
         time: "30 min",

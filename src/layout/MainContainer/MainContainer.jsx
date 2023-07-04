@@ -10,14 +10,14 @@ const MainContainer = ({ typeOfRecipe }) => {
 
     return (
             <Main>
-                    {listRecipes.map((recipe, index) => (
-                        recipe.category === typeOfRecipe && (
-                            <RecipeCard 
-                                key={index}
-                                data={recipe}
-                            />
-                        )
-                    ))}
+                {listRecipes.map((recipe, index) => (
+                    recipe.category === typeOfRecipe && (
+                        <RecipeCard 
+                            key={index}
+                            data={recipe}
+                        />
+                    )
+                ))}
             </Main>
     )
 }

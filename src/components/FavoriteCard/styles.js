@@ -16,7 +16,7 @@ export const CardWrapper = styled.article`
     }
 
     @media (max-width: 414px) {
-        height: 560px;
+        height: 580px;
     }
 `
 
