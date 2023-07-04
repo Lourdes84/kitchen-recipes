@@ -9,12 +9,16 @@ export const HeaderWrapper = styled.header`
     display: flex;
     justify-content: center;
 `
-export const ImageWrapper = styled.div`
+export const LogoWrapper = styled.div`
     width: 150px;
 
      @media (max-width: 1200px) {
         width: 100px;
         position: relative;
+
+        &.hidde-logo {
+            display: none;
+        }
     }
 `
 export const Icon = styled.div`
@@ -141,7 +145,3 @@ export const StyledLinkDropdown = styled.li`
         background: #FEF7EA;
     }
 `
-
-export const SearchBarWrapper = styled.div`
-    width: ${props => props.isBigScreen && '300px'};
-` 

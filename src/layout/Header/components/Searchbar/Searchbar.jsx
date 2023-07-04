@@ -4,7 +4,7 @@ import { RxCross2 } from 'react-icons/rx'
 import { useContext, useState } from 'react'
 import { SearchContext } from '@/context/SearchContext'
 
-const Searchbar = ({ placeholder, isSmallScreen, disabled }) => {
+const Searchbar = ({ placeholder, showSearchbar, setShowSearchbar, disabled }) => {
     const [ query, setQuery ] = useState("")
     const [ showCrossIcon, setShowCrossIcon ] = useState(false)
     const { search } = useContext(SearchContext)
@@ -24,13 +24,16 @@ const Searchbar = ({ placeholder, isSmallScreen, disabled }) => {
     }
 
     const searchQuery = () => {
+        setShowSearchbar(!showSearchbar)
         if(queryNotEmpty) {
             search(query)
             setShowCrossIcon(true)
+            setShowSearchbar(true)
         }
     }
 
     const clearSearch = () => {
+        setShowSearchbar(false)
         setShowCrossIcon(false)
         setQuery("")
         search("")
@@ -40,11 +43,11 @@ const Searchbar = ({ placeholder, isSmallScreen, disabled }) => {
         <SearchBarWrapper>
             <StyledInput 
                 type="text"
-                isSmallScreen={isSmallScreen}
                 placeholder={placeholder} 
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
+                className={showSearchbar ? "show" : ""}
                 disabled={disabled}
             />
             {showCrossIcon ? <RxCross2 onClick={clearSearch} /> : <BsSearch onClick={searchQuery} />}

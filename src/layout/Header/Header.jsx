@@ -6,8 +6,8 @@ import { RiMenuUnfoldFill } from 'react-icons/ri'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import { BiLeaf } from 'react-icons/bi'
 import { GiWrappedSweet } from 'react-icons/gi'
-import { HeaderWrapper, NavWrapper, ImageWrapper, Icon, StyledNav, LinksWrapper, StyledLink,
-    StyledDropdown, StyledLinkDropdown, SearchBarWrapper } from './styles'
+import { HeaderWrapper, NavWrapper, LogoWrapper, Icon, StyledNav, LinksWrapper, StyledLink,
+    StyledDropdown, StyledLinkDropdown } from './styles'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -16,6 +16,7 @@ const Header = () => {
     const isContactPage = router.pathname === "/contacto"
     const [ isSmallScreen, setIsSmallScreen ] = useState(false)
     const [ showResponsiveMenu, setShowResponsiveMenu ] = useState(false)
+    const [ showSearchbar, setShowSearchbar ] = useState(false)
     const [ showDropdown, setShowDropdown ] = useState(false)
     const menuIcon = showResponsiveMenu ? MdOutlineRestaurantMenu : RiMenuUnfoldFill 
     
@@ -93,9 +94,9 @@ const Header = () => {
         <HeaderWrapper>
             <NavWrapper>
                 {isSmallScreen && <Icon as={menuIcon} onClick={handleMenuIconClick} /> }
-                <ImageWrapper>
+                <LogoWrapper className={showSearchbar ? "hidde-logo" : ""}>
                     <img src="/images/logo.webp" alt="logo" />
-                </ImageWrapper>
+                </LogoWrapper>
                         <StyledNav className={showResponsiveMenu ? "show-responsive" : ""}>
                             <LinksWrapper>
                                 {linkOptions.map((link, index) => 
@@ -111,7 +112,7 @@ const Header = () => {
                                             {link.icon}
                                         </StyledLink>
                                         {link.dropdown && (
-                                              <StyledDropdown className={showDropdown ? "show-dropdown" : ""} onMouseLeave={() => setShowDropdown(false)}>
+                                            <StyledDropdown className={showDropdown ? "show-dropdown" : ""} onMouseLeave={() => setShowDropdown(false)}>
                                                 {link.dropdownLinks.map((link, index) =>
                                                     <Link href={link.url} key={index} onClick={handleLinkClick}>
                                                         <StyledLinkDropdown>
@@ -120,19 +121,18 @@ const Header = () => {
                                                         </StyledLinkDropdown>
                                                     </Link>
                                                 )}
-                                              </StyledDropdown>
+                                            </StyledDropdown>
                                         )}
                                     </li>
                                 )}    
                             </LinksWrapper>
                         </StyledNav>
-                        <SearchBarWrapper isBigScreen={!isSmallScreen}>
-                            <Searchbar 
-                                placeholder="Buscar nombre receta"
-                                isSmallScreen={isSmallScreen} 
-                                disabled={isContactPage} 
-                            />
-                        </SearchBarWrapper>    
+                        <Searchbar 
+                            placeholder="Buscar nombre receta"
+                            showSearchbar={showSearchbar}
+                            setShowSearchbar={setShowSearchbar}
+                            disabled={isContactPage} 
+                        />
             </NavWrapper>
         </HeaderWrapper>
     )
