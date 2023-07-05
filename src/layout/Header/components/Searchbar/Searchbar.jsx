@@ -47,7 +47,7 @@ const Searchbar = ({ placeholder, showSearchbar, setShowSearchbar, disabled }) =
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
-                className={showSearchbar ? "show" : ""}
+                showSearchbar={showSearchbar}
                 disabled={disabled}
             />
             {showCrossIcon ? <RxCross2 onClick={clearSearch} /> : <BsSearch onClick={searchQuery} />}

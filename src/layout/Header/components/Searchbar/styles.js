@@ -24,15 +24,13 @@ export const StyledInput = styled.input`
     border: none;
 
     @media (max-width: 1200px) {
-        display: none;
-        width: 0%;
+        width: 0px;
         padding-left: 0px;
         transition: .3s ease;
 
-        &.show {
-            display: block;
+        ${(props) => props.showSearchbar && `
             padding-left: 10px;
             width: 200px;
-        }
+        `}
     }
 `
