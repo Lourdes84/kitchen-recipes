@@ -7,7 +7,6 @@ export const recipes = [
         time: "30 min",
         difficulty: "media",
         diners: "8 pers.",
-        favorites: false,
         description: "El tiramisú es una de las recetas de postres más famosas de la cocina italiana. Un dulce italiano que se ha convertido en una receta tradicional.",
         ingredients: ["500 g. Mascarpone", "6 Huevos", "150g azúcar", "300g bizcochos soletilla", "4 cucharadas de Amaretto", "10/20g de cacao puro en polvo", "150ml de cafe", "1 pellizco de sal"],
         steps: [
@@ -28,7 +27,6 @@ export const recipes = [
         time: "90 min",
         difficulty: "media",
         diners: "6 pers.",
-        favorites: false,
         description: "Este es un postre clásico de la cocina británica y norteamericana, una vez llevada allí la receta por los emigrantes ingleses. También la encontraremos como “lemon meringue pie”.",
         ingredients: ["1 masa quebrada o masa brisa", "2 huevos y 4 yemas", "350 g. de azúcar", "80 g. de almidón o maicena", "40 g. de mantequilla", "200 ml. de zumo de limón", "50 ml. de agua", "Ralladura de un limón", "Para el merengue italiano: 4 claras de huevo", "50 g. de azúcar", "50 ml. de agua + 100 g. de azúcar", "1 pizca de sal"],
         steps: [
@@ -59,7 +57,6 @@ export const recipes = [
         time: "120 min",
         difficulty: "Fácil",
         diners: "10 pers.",
-        favorites: false,
         description: "El brownie de chocolate es una de las recetas que garantizan el éxito de cualquier celebración que se precie. Para los amantes del chocolate es un postre de 10.",
         ingredients: ["140 g. de mantequilla", "200 g. de azúcar", "65 g. de panela o azúcar moreno", "90 g. de cacao puro en polvo", "1/2 cucharadita de esencia de vainilla", "2 huevos L", "1 cucharada de miel", "85 g. de harina de trigo de todo uso", "10 g. de harina fina de maíz", "1/4 cucharadita de sal"],
         steps: [
@@ -78,7 +75,6 @@ export const recipes = [
         time: "60 min",
         difficulty: "Fácil",
         diners: "8 pers.",
-        favorites: false,
         description: "Si hay una tarta universal, esa es la de queso. Estados Unidos, Alemania, Japón, Grecia… prácticamente todos los países del mundo tienen su propia versión.",
         ingredients: ["Para la base de galletas: 2 paquetes de galletas María", "150 g de mantequilla", "1 k. de crema de queso (1/2 de Mascarpone y 1/2 de queso crema)", "200 g. de azúcar", "6 huevos L"],
         steps: [
@@ -106,7 +102,6 @@ export const recipes = [
         time: "20 min",
         difficulty: "Fácil",
         diners: "6 pers.",
-        favorites: false,
         description: "Desde esa primera receta escrita en 1755, por el cocinero francés Menón, hasta nuestros días, ya ha llovido. Aunque hoy en día solemos encontrarnos con el mismo nombre, preparaciones distintas.",
         ingredients: ["170 g. de chocolate 70% cacao", "55 g. de mantequilla", "3 huevos M", "75 g. de azúcar", "Una pizca de sal (5 gramos)"],
         steps: [
@@ -125,7 +120,6 @@ export const recipes = [
         time: "65 min",
         difficulty: "Fácil",
         diners: "8 pers.",
-        favorites: false,
         description: "La zanahoria, aunque pueda no parecerlo, es un ingrediente extraordinario para preparar postres. Principalmente la usamos para dulces tipo bizcocho, que adquieren un bonito color anaranjado.",
         ingredients: ["250 g. de zanahoria cruda", "200 g. de harina de trigo de repostería (con leudante)", "125 ml. de aceite de oliva virgen extra suave", "200 g. de azúcar moreno o panela", "4 huevos", "1 cucharadita de canela en polvo", "3 ml. de esencia de vainilla", "10 g. de levadura química en polvo", "200 g. de queso Mascarpone", "200 ml. de nata para montar 35% MG", "160 g. de azúcar glass", "40 g. de mantequilla"],
         steps: [
@@ -148,7 +142,6 @@ export const recipes = [
         time: "40 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "Nos atrevemos a decir que los espaguetis con marisco o, como los llaman los italianos, los spaguetti ai frutti di mare, es un plato delicioso y fácil de preparar.",
         ingredients: ["400 g. de espaguetis", "24 langostinos", "24 mejillones", "20 almejas frescas", "1 cebolla", "4 diente de ajo", "150 ml de vino blanco seco", "4 tomates pequeños", "Aceite de oliva virgen extra", "Sal y pimienta negra recién molida", "Perejil fresco picado"],
         steps: [
@@ -174,7 +167,6 @@ export const recipes = [
         time: "40 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "Las gyozas son unas empanadillas japonesas cocinadas al vapor y pasadas por la plancha que se están introduciendo con fuerza en nuestra gastronomía.",
         ingredients: ["1 paquete de masa de gyozas", "250 g. de carne picada de cerdo", "200 g. de setas shiitake", "1 Hoja de cola china", "1 cebolleta", "1 ajo", "1 trozo de jengibre rallado", "Salsa de soja", "Aceite de sésamo", "Vinagre de arroz"],
         steps: [
@@ -195,7 +187,6 @@ export const recipes = [
         time: "300 min",
         difficulty: "Media",
         diners: "6 pers.",
-        favorites: false,
         description: "El ramen, una receta de sopa japonesa que hoy en día ha traspasado las fronteras de su país de origen. El ramen esa sopa japonesa que es en realidad de origen chino.",
         ingredients: ["1,5 kg. de pollo despiezado", "Cebolleta china", "150 g. de setas shitake", "30 g. de atún seco en polvo o escamas, katsuobuchi", "4 zanahorias", "1 cda. de semillas cilantro", "100 ml. de salsa soja", "100 ml. de salsa de pescado tailandesa", "6 rodajas lomo cerdo fresco", "20 g. de alga kombu", "300 g. de fideos para ramen", "6 huevos M"],
         steps: [
@@ -219,7 +210,6 @@ export const recipes = [
         time: "55 min",
         difficulty: "Media",
         diners: "6 pers.",
-        favorites: false,
         description: "Este clásico de la cocina es famoso en todo el mundo, no sólo en Italia. Ideal para llevar en el taper al trabajo o al cole, y que triunfa entre los más pequeños de casa.",
         ingredients: ["500 g. de carne (una mezcla de cerdo y ternera)", "2 pimientos rojos", "2 zanahorias", "2 dientes de ajo", "150 g. de bacon o panceta", "2 cebollas grandes", "250 g. de tomate natural", "250 ml de vino blanco", "100 ml. de aceite de oliva", "12 láminas de lasaña", "125 g de harina de trigo", "125 g de mantequilla", "1 litro de leche entera", "100-120 g. de queso rallado"],
         steps: [
@@ -247,7 +237,6 @@ export const recipes = [
         time: "60 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "La gran comunidad india del Reino Unido y su claro vínculo con India, hacen pensar que se trata de una receta inglesa basada en la cocina india.",
         ingredients: ["2 pechugas de pollo", "210 g. arroz basmati", "1 cda. de jengibre rallado fresco", "2 dientes de ajo", "1/2 cdita. de chile", "2 cdita. de canela", "2 cdita. de cúrcuma", "2 cdita. de cilantro molido", "1/2 cdita. de comino", "1 cdita. de pimentón", "zumo de medio limón", "125 g. de yogur natural", "120 g. leche de coco", "400 g. de tomate triturado"],
         steps: [
@@ -274,7 +263,6 @@ export const recipes = [
         time: "60 min",
         difficulty: "Fácil",
         diners: "6 pers.",
-        favorites: false,
         description: "Esta receta triunfa por la jugosidad del pollo guisado pero sobre todo por la salsa. No puede faltar una buena hogaza de pan para mojar hasta que no quede nada en el plato.",
         ingredients: ["1 pollo troceado para guisar (2 kg.)", "2 cebollas grandes", "2 huevos", "2 dientes de ajo", "1 trozo pan", "15 almendras", "300 ml. de vino blanco", "200 ml. de caldo de pollo", "100 ml de aceite de oliva virgen", "Sal y pimienta negra"],
         steps: [
@@ -297,7 +285,6 @@ export const recipes = [
         time: "75 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "El poke es originariamente una receta hawaiana en la que converge una gran fusión cultural. Hawai, como puerto de escala para navegantes de polinesia, Portugal, Japón, Filipinas y China.",
         ingredients: ["400 g. de salmón fresco o congelado", "500 g. de arroz redondo cocido", "1 cucharadita de semillas de sésamo", "50 g. de salsa de soja", "3 cucharadas de aceite de sésamo", "3 cucharadas de vinagre de arroz", "1 aguacate grande y maduro", "50 g. de edamame", "Cilantro fresco"],
         steps: [
@@ -320,7 +307,6 @@ export const recipes = [
         time: "60 min",
         difficulty: "Fácil",
         diners: "2 pers.",
-        favorites: false,
         description: "Inspirado en la cocina de Isquia (Ischia en italiano), este estofado de conejo es un plato perfecto para ir recibiendo los días más frescos del otoño.",
         ingredients: ["Conejo troceado", "Media cabeza de ajos", "150g de cebolla", "200ml vino blanco", "250ml de caldo de verduras", "100g de tomate triturado", "1 hoja de laurel", "1/2 cucharada de romero seco", "Perejil fresco"],
         steps: [
@@ -340,7 +326,6 @@ export const recipes = [
         time: "30 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "Hay pocas recetas de pescado tan rápidas y sorprendentes como un buen tartar de atún. En poco más de treinta minutos tendremos una receta super healthy.",
         ingredients: ["300 g. de atún fresco", "2 aguacates", "1 cebolleta", "1 lima", "Salsa de soja", "Semillas de sésamo", "Jengibre fresco", "Aceite de oliva virgen extra", "Aceite de sésamo"],
         steps: [
@@ -362,7 +347,6 @@ export const recipes = [
         time: "20 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "Aunque no tan conocida en occidente como la salsa teriyaki, la salsa yakitori es una de las salsas japonesas más populares, acompaña y macera la brocheta",
         ingredients: ["Huesos de pollo y caparazón", "200 ml. de salsa de soja", "200 ml. de agua", "100 ml. de sake", "1 trozo de jengibre", "2 cucharadas de azúcar moreno", "3 dientes de ajo", "1 cucharada de maicena"],
         steps: [
@@ -382,7 +366,6 @@ export const recipes = [
         time: "30 min",
         difficulty: "Fácil",
         diners: "8 pers.",
-        favorites: false,
         description: "Estas albóndigas con un toque de canela y sin carne, son perfectas si estáis con una dieta alta en vegetales y verduras o bien si sois vegetarianos.",
         ingredients: ["3 cebollas grandes", "1 kg de tomate duros", "1 cucharadita de canela", "100 g de harina", "50 g de uvas pasas", "4 dientes de ajo", "4 dientes de ajo", "2 huevos camperos", "Sal y pimienta negra recién molida", "1 cucharada de orégano", "Unas hojas de menta fresca"],
         steps: [
@@ -405,7 +388,6 @@ export const recipes = [
         time: "30 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "El arroz constituye un alimento básico dentro de nuestra dieta, al igual que ocurre con las verduras. Una combinación de ambos hace un plato muy rico y sano.",
         ingredients: ["4 vasitos de arroz redondo", "150 g. de zanahoria", "200 g. de calabacín", "100 ml. de salsa de soja", "100 ml. de aceite de oliva virgen extra", "5 g. de tomillo seco", "50 g. de apio", "100 g. de pimiento rojo", "150 g. de puerro", "50 g. de maíz"],
         steps: [
@@ -422,7 +404,6 @@ export const recipes = [
         time: "60 min",
         difficulty: "Fácil",
         diners: "2 pers.",
-        favorites: false,
         description: "Que no os asuste el nombre, porque es una receta sencillísima de origen italiano que podríamos decir es prima hermana de nuestras tortillas.",
         ingredients: ["1 cebolla mediana o 2 pequeñas", "80 g. de espinacas frescas", "1 rulo de queso de cabra", "Sal y pimienta negra recién molida", "1 pimiento rojo", "4 huevos grandes"],
         steps: [
@@ -446,7 +427,6 @@ export const recipes = [
         time: "40 min",
         difficulty: "media",
         diners: "4 pers.",
-        favorites: false,
         description: "Las hamburguesas se han convertido en un plato tan polivalente que pueden ser de carne, pescado o de vegetales y también como en este caso de hortalizas.",
         ingredients: ["450 g. de patatas", "70 g. de guisantes", "1 cucharada de semillas de sésamo", "Jengibre en polvo", "1 limón", "Vinagre de manzana", "1 tomate grande", "95g de harina fina de maíz", "1 cebolla morada", "1 cayena", "Comino en polvo", "275g. de tofu seco", "Pan de Viena"],
         steps: [
@@ -468,7 +448,6 @@ export const recipes = [
         time: "25 min",
         difficulty: "media",
         diners: "4 pers.",
-        favorites: false,
         description: "Las quesadillas son una preparación muy tradicional en la cocina mexicana, fáciles de preparar y que permiten todo tipo de rellenos y variaciones.",
         ingredients: ["8 tortillas grandes, de maíz o trigo", "150 g. de champiñones laminados", "1/2 cebolla", "1/2 pimiento verde", "1 lima", "Salsa picante"],
         steps: [
@@ -486,7 +465,6 @@ export const recipes = [
         time: "60 min",
         difficulty: "Fácil",
         diners: "4 pers.",
-        favorites: false,
         description: "Las croquetas son las reinas de la cocina de aprovechamiento y se pueden hacer de gran variedad de cosas, jamón, pollo, setas y vegetarianas.",
         ingredients: ["2 berenjenas", "1 diente de ajo", "1 huevo y medio", "Pimienta negra recién molida", "150 g. de queso rallado tipo Cheddar", "1 cucharadita de perejil seco", "Pan rallado"],
         steps: [

@@ -31,6 +31,7 @@ export const StyledInput = styled.input`
 
         &.show {
             display: block;
+            padding-left: 10px;
             width: 200px;
         }
     }
