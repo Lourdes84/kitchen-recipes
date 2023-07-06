@@ -50,19 +50,29 @@ const Home = () => {
               display: flex;
               justify-content: center;
               gap: 60px;
-              margin-top: 150px;
+              //margin-top: 150px;
+              margin-top: 9.3rem;
 
               @media (max-width: 1840px) {
                 flex-direction: column;
               }
 
-              @media (max-width: 1070px) {
+
+            @media (max-width: 1070px) {
+              margin-top: 16.2rem;
+            }
+
+            @media (max-width: 640px) {
+              margin-top: 31.2rem;
+            }
+
+            /*   @media (max-width: 1070px) {
                 margin-top: 260px;
               }
 
               @media (max-width: 640px) {
                 margin-top: 500px;
-              }
+              } */
             }
           
             main {
