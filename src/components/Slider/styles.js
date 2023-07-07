@@ -2,12 +2,13 @@ import styled from 'styled-components'
 import Link from 'next/link';
 
 export const SliderWrapper = styled.div`
-    position: relative;
-    width: 100%;
-    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: 1071px) {
+        position: relative;
+    }
 `
 export const ImageSlide = styled.img`
     display: block;
@@ -18,26 +19,26 @@ export const ImageSlide = styled.img`
 `
 
 export const FoodOptionsWrapper = styled.div`
-    position: absolute;
-    bottom: -75px;
     width: 50%;
     display: flex;
     justify-content: center;
     gap: 10px;
     z-index: 10;
 
+    @media (min-width: 1071px) {
+        position: absolute;
+        bottom: -75px;
+    }
+
     @media (max-width: 1070px) {
         flex-wrap: wrap;
-        bottom: -230px;
         width: 70%;
+        padding-top: 20px;
+        padding-bottom: 40px;
     }
 
     @media (max-width: 729px) {
         width: 90%;
-    }
-
-    @media (max-width: 640px) {
-        bottom: -460px;
     }
 `
 export const StyledLink = styled(Link)`

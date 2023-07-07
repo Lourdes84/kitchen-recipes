@@ -30,18 +30,13 @@ const Home = () => {
               display: flex;
               justify-content: center;
               gap: 60px;
-              margin-top: 150px;
 
               @media (max-width: 1840px) {
                 flex-direction: column;
               }
-
-              @media (max-width: 1070px) {
-                margin-top: 260px;
-              }
-
-              @media (max-width: 640px) {
-                margin-top: 500px;
+ 
+              @media (min-width: 1071px) {
+                margin-top: 150px;
               }
             }
         `}

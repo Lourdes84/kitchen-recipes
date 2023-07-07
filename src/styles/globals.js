@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
 
     .swiper {
         width: 100%;
-        height: 100%;
+        height: 450px;
     }
 
     .swiper-slide {
