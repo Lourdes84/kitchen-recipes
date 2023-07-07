@@ -1,5 +1,4 @@
-import { SearchBarWrapper, StyledInput } from './styles'
-import { BsSearch } from 'react-icons/bs'
+import { SearchBarWrapper, StyledInput, SearchIcon } from './styles'
 import { RxCross2 } from 'react-icons/rx'
 import { useContext, useState } from 'react'
 import { SearchContext } from '@/context/SearchContext'
@@ -50,7 +49,9 @@ const Searchbar = ({ placeholder, showSearchbar, setShowSearchbar, disabled }) =
                 showSearchbar={showSearchbar}
                 disabled={disabled}
             />
-            {showCrossIcon ? <RxCross2 onClick={clearSearch} /> : <BsSearch onClick={searchQuery} />}
+            {showCrossIcon ? 
+            <RxCross2 onClick={clearSearch} /> 
+            : <SearchIcon onClick={searchQuery} disabled={disabled} />}
         </SearchBarWrapper>
     )
 }

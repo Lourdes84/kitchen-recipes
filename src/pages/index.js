@@ -1,17 +1,11 @@
 import Head from 'next/head'
-import { recipes } from './../data/recipes'
 import Aside from '@/layout/Aside/Aside'
-import RecipeCard from '@/components/RecipeCard/RecipeCard'
-import { useContext } from 'react'
-import { SearchContext } from '@/context/SearchContext'
-import CustomizedTitle from '@/components/CustomizedTitle/CustomizedTitle'
 import LinksInterest from '@/components/LinksInterest/LinksInterest'
 import SocialMediaBanner from '@/components/SocialMediaBanner/SocialMediaBanner'
+import MainContainer from '@/layout/MainContainer/MainContainer'
 
 const Home = () => {
-  const { searchResults } = useContext(SearchContext)
   const isPopular = "Popular"
-  const listRecipes = searchResults.length ? searchResults : recipes
 
   return (
     <>
@@ -23,21 +17,7 @@ const Home = () => {
       </Head>
       <>  
           <div className="container">
-              <main>
-                  <div>
-                    <CustomizedTitle withoutMargin text="Recetas populares" />
-                  </div>
-                  <div className="recipes">
-                    {listRecipes.map((recipe, index) => (
-                      recipe.category === isPopular && (
-                        <RecipeCard 
-                            key={index}
-                            data={recipe}
-                        />
-                      )
-                    ))}
-                  </div>
-              </main>
+              <MainContainer typeOfRecipe={isPopular} />
               <Aside />
           </div>
           <SocialMediaBanner />
@@ -50,41 +30,19 @@ const Home = () => {
               display: flex;
               justify-content: center;
               gap: 60px;
-              //margin-top: 150px;
-              margin-top: 9.3rem;
+              margin-top: 150px;
 
               @media (max-width: 1840px) {
                 flex-direction: column;
               }
 
-
-            @media (max-width: 1070px) {
-              margin-top: 16.2rem;
-            }
-
-            @media (max-width: 640px) {
-              margin-top: 31.2rem;
-            }
-
-            /*   @media (max-width: 1070px) {
+              @media (max-width: 1070px) {
                 margin-top: 260px;
               }
 
               @media (max-width: 640px) {
                 margin-top: 500px;
-              } */
-            }
-          
-            main {
-              display: flex;
-              flex-direction: column;
-            }
-
-            .recipes {
-              display: flex;
-              gap: 50px;
-              flex-wrap: wrap;
-              justify-content: center;
+              }
             }
         `}
       </style>

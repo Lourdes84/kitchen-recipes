@@ -6,3 +6,7 @@ export const Main = styled.main`
     flex-wrap: wrap;
     justify-content: center;
 `
+export const TitleWrapper = styled.div`
+    flex-grow: 1;
+    width: 100%;
+`

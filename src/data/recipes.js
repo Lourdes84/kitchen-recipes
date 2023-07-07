@@ -1,7 +1,7 @@
 export const recipes = [
     {
         id: 0,
-        title: "Tiramisú",
+        title: "Tiramisu",
         img: "/images/postres/sweet-01.webp",
         category: "Postre",
         time: "30 min",

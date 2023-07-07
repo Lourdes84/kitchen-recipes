@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BsSearch } from 'react-icons/bs'
 
 export const SearchBarWrapper = styled.div`
     width: 300px;
@@ -33,4 +34,11 @@ export const StyledInput = styled.input`
             width: 200px;
         `}
     }
+`
+
+export const SearchIcon = styled(BsSearch)`
+    ${(props) => props.disabled && `
+        pointer-events: none;
+        color: rgb(170, 170, 170);
+    `}
 `

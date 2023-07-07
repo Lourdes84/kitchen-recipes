@@ -9,11 +9,10 @@ export const SearchProvider = ({ children }) => {
     const search = (query) => {
         const results = recipes.filter((recipe) => 
         recipe.title.toLocaleLowerCase().includes(query.toLocaleLowerCase()))
-        if(results) {
+        if(results.length > 0) {
             return setSearchResults(results)
-        } else {
-            setSearchResults(recipes)   
-        }
+        } 
+        return setSearchResults('empty')   
     }
 
     return (
