@@ -24,10 +24,13 @@ const Favoritos = () => {
     }, [])
 
     const getList = () => {
-      const result = listFavorites.filter(favorites => (
-        searchResults.some(search => favorites.id === search.id)
-      ))
-      return result.length > 0 ? result : listFavorites
+      if(searchResults !== "empty") {
+        const result = listFavorites.filter(favorites => (
+            searchResults.some(search => favorites.id === search.id)
+        ))
+        return result.length > 0 ? result : listFavorites
+      }
+      return []
     }
 
     const list = getList()
