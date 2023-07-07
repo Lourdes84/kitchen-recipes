@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AsideWrapper = styled.aside`
-    max-width: 300px;
+    max-width: 23%;
 
     @media (max-width: 1840px) {
         max-width: 100%;

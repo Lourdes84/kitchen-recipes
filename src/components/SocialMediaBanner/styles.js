@@ -20,6 +20,7 @@ export const BannerWrapper = styled.section`
 
     @media(max-width: 940px){
         height: 400px;
+        font-size: 20px;
     }
 `
 
