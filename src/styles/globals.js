@@ -25,11 +25,6 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Crimson Text';
     }
 
-    footer {
-        position: absolute;
-        bottom: 0;
-    }
-
     img {
         max-width: 100%;
     }

@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const AsideWrapper = styled.aside`
-    max-width: 23%;
+    width: 300px;
+    min-width: 300px;
 
     @media (max-width: 1840px) {
-        max-width: 100%;
+        width: 100%;
     }
 `
 
@@ -49,7 +50,10 @@ export const PostWrapper = styled.div`
     padding-right: ${(props) => props.profileWrapper ? "0px" : "40px"};
 
     @media (max-width: 1840px) {
-        display: ${(props) => props.profileWrapper && "flex"};
+        ${(props) => props.profileWrapper && `
+            display: flex;
+            align-items: flex-start;
+        `}
         flex-direction: column;
         padding-right: 0px;
     }
