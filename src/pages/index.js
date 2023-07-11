@@ -32,13 +32,10 @@ const Home = () => {
               gap: 60px;
 
               @media (max-width: 1840px) {
-                flex-wrap: wrap;
+                flex-direction: column;
+                -webkit-flex-direction: column;
               }
 
-              @media (max-width: 1071px) {
-                flex-direction: column;
-              }
- 
               @media (min-width: 1071px) {
                 margin-top: 150px;
               }
