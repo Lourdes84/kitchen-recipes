@@ -38,10 +38,10 @@ const ContactForm = () => {
                 <HeaderWrapper>
                     <h2>Formulario</h2>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, qui, iusto nulla aperiam 
-                        dolore voluptatum perspiciatis nihil laboriosam aspernatur ipsum ad debitis corporis soluta mollitia reprehenderit vitae aut facere tenetur!
+                        Si tienes alguna consulta que realizarnos o incluso deseas enviarnos alguna receta que quieras que inluyamos
+                        en nuestra web, no dudes en contactarnos rellenando los campos que dispones en este formulario.
                     </p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, eum!</p>
+                    <p>Estaremos encantados de atenderte!</p>
                 </HeaderWrapper>
                 <Formik
                     initialValues={ INITIAL_FORM_STATE }
