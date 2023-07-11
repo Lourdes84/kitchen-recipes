@@ -34,6 +34,10 @@ const Home = () => {
               @media (max-width: 1840px) {
                 flex-wrap: wrap;
               }
+
+              @media (max-width: 1071px) {
+                flex-direction: column;
+              }
  
               @media (min-width: 1071px) {
                 margin-top: 150px;
