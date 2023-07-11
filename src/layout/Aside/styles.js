@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 export const AsideWrapper = styled.aside`
-    width: 300px;
-    min-width: 300px;
+    width: 250px;
+    
 
     @media (max-width: 1840px) {
         width: 100%;
+    }
+
+    @media (min-width: 1840px) {
+        min-width: 300px;
     }
 `
 

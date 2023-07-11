@@ -33,7 +33,6 @@ const Home = () => {
 
               @media (max-width: 1840px) {
                 flex-direction: column;
-                -webkit-flex-direction: column;
               }
 
               @media (min-width: 1071px) {
