@@ -14,15 +14,19 @@ const GlobalStyles = createGlobalStyle`
     }
 
     html {
-        height: 100%;
+        min-height: 100vh;
     }
 
     body {
         overflow-x: hidden;
-        padding-bottom: 100px;
-        min-height: 100%;
         position: relative;
+        padding-bottom: 100px;
+        min-height: 100vh;
         font-family: 'Crimson Text';
+    }
+
+    #__next {
+        min-height: 100vh;
     }
 
     img {
