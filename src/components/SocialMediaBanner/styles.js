@@ -23,9 +23,17 @@ export const BannerWrapper = styled.section`
         font-size: 20px;
     }
 
-    @media(max-width: 1840px){
-        -webkit-background-attachment: scroll;
+    @media(max-width: 1070px){
+        background-attachment: scroll;
     }
+`
+export const Content = styled.div`
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 `
 
 export const SocialMediaWrapper = styled.div`
