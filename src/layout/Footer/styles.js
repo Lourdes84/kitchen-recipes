@@ -13,4 +13,5 @@ export const FooterWrapper = styled.footer`
 
 export const FooterInfo = styled.div`
     width: 70%;
+    text-align: center;
 `
