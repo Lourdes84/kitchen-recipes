@@ -22,6 +22,10 @@ export const BannerWrapper = styled.section`
         height: 400px;
         font-size: 20px;
     }
+
+    @media(max-width: 1840px){
+        -webkit-background-attachment: scroll;
+    }
 `
 
 export const SocialMediaWrapper = styled.div`
