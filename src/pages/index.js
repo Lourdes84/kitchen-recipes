@@ -5,7 +5,7 @@ import SocialMediaBanner from '@/components/SocialMediaBanner/SocialMediaBanner'
 import MainContainer from '@/layout/MainContainer/MainContainer'
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const HomeContainer = styled.div`
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -19,7 +19,6 @@ export const Container = styled.div`
     }
 `
 
-
 const Home = () => {
   const isPopular = "Popular"
 
@@ -31,32 +30,13 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/tenedor.svg" />
       </Head>
-      <>  
-          <Container>
-              <MainContainer typeOfRecipe={isPopular} />
-              <Aside />
-          </Container>
-          <SocialMediaBanner />
-          <LinksInterest />
-      </>
-{/* 
-      <style jsx>
-        {`
-            .container {
-              display: flex;
-              justify-content: center;
-              gap: 60px;
-
-              @media (max-width: 1840px) {
-                flex-direction: column;
-              }
-
-              @media (min-width: 1071px) {
-                margin-top: 150px;
-              }
-            }
-        `}
-      </style> */}
+      
+      <HomeContainer>
+          <MainContainer typeOfRecipe={isPopular} />
+          <Aside />
+      </HomeContainer>
+      <SocialMediaBanner />
+      <LinksInterest />
     </>
   )
 }
