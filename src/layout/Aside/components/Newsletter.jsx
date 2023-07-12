@@ -5,7 +5,7 @@ import {Block, Title, TitleNewsletter, StyledInput, ErrorText, StyledButton} fro
 const Newsletter = () => {
     const [ email, setEmail ] = useState("")
     const [ showErrorMessage, setShowErrorMessage ] = useState(false)
-    const [ textButton, setTextButton ] = useState("Enviar")
+    const [ textButton, setTextButton ] = useState("Suscribirse")
 
     const handleChange = (e) => {
         setEmail(e.target.value)

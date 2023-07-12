@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <FooterInfo>
-                <p>Todos los derechos reservados - Lourdes Gonzalez 2023</p>
+                <p>© 2023 Barriga llena corazón contento. Todos los derechos reservados. Desarrollado por Lourdes González</p>
             </FooterInfo>
         </FooterWrapper>
     )
