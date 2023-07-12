@@ -70,7 +70,7 @@ export const StyledLink = styled(Link)`
 export const StyledDropdown = styled.ul`
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 240px;
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
