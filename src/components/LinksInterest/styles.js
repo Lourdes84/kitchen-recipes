@@ -34,11 +34,19 @@ export const SliderWrapper = styled.div`
 		left: 0;
 		top: 0;
 	}
+
+	@media (max-width: 640px){
+		&::before,
+		&::after {
+			width: 20px;
+		}
+	}
 `
+
 export const SlideTrack = styled.div`
     animation: ${scroll} 40s linear infinite;
 	display: flex;
-	width: calc(250px * 5);
+	width: calc(250px * 7);
 `
 
 export const Slide = styled.div`

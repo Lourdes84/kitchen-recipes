@@ -15,14 +15,29 @@ const LinksInterest = () => {
             alt: "Recetas gratis"
         },
         {
+            url: "https://www.javirecetas.com/",
+            img: "javi-recetas.webp",
+            alt: "Javi recetas"
+        },
+        {
             url: "https://www.directoalpaladar.com/",
             img: "directo-paladar.webp",
             alt: "Directo al paladar"
         },
         {
+            url: "https://canalcocina.es/",
+            img: "canal-cocina.webp",
+            alt: "Canal cocina"
+        },
+        {
             url: "https://maille.com.es/",
             img: "maille.webp",
             alt: "Maille"
+        },
+        {
+            url: "https://deliciousmartha.com/",
+            img: "delicious-martha.webp",
+            alt: "Delicious Martha"
         }
     ]
     return (
@@ -39,7 +54,7 @@ const LinksInterest = () => {
                     ))}
                 </SlideTrack>
             </SliderWrapper>
-      </section>
+        </section>
     )
 }
 
