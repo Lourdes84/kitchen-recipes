@@ -7,12 +7,11 @@ const Searchbar = ({ placeholder, showSearchbar, setShowSearchbar, disabled }) =
     const [ query, setQuery ] = useState("")
     const [ showCrossIcon, setShowCrossIcon ] = useState(false)
     const { search } = useContext(SearchContext)
-    const queryNotEmpty = query !== ""
 
     const handleKeyDown = (e) => {
         const enterKeyPressed = e.key === "Enter"
 
-        if(enterKeyPressed && queryNotEmpty) {
+        if(enterKeyPressed && query) {
             e.preventDefault() 
             setShowCrossIcon(true) 
             search(query)
@@ -24,7 +23,7 @@ const Searchbar = ({ placeholder, showSearchbar, setShowSearchbar, disabled }) =
 
     const searchQuery = () => {
         setShowSearchbar(!showSearchbar)
-        if(queryNotEmpty) {
+        if(query) {
             search(query)
             setShowCrossIcon(true)
             setShowSearchbar(true)
