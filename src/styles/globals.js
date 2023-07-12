@@ -56,6 +56,34 @@ const GlobalStyles = createGlobalStyle`
         background: #000;
     }
 
+    .home-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+    @media (max-width: 1840px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 1071px) {
+        margin-top: 150px;
+    }
+    }
+
+    .main-wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .recipe-wrapper {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 `
 
 export default GlobalStyles

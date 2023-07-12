@@ -3,21 +3,6 @@ import Aside from '@/layout/Aside/Aside'
 import LinksInterest from '@/components/LinksInterest/LinksInterest'
 import SocialMediaBanner from '@/components/SocialMediaBanner/SocialMediaBanner'
 import MainContainer from '@/layout/MainContainer/MainContainer'
-import styled from 'styled-components'
-
-export const HomeContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-
-    @media (max-width: 1840px) {
-        flex-direction: column;
-    }
-
-    @media (min-width: 1071px) {
-        margin-top: 150px;
-    }
-`
 
 const Home = () => {
   const isPopular = "Popular"
@@ -30,11 +15,11 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/tenedor.svg" />
       </Head>
-      
-      <HomeContainer>
+
+      <div className="home-wrapper">
           <MainContainer typeOfRecipe={isPopular} />
           <Aside />
-      </HomeContainer>
+      </div>
       <SocialMediaBanner />
       <LinksInterest />
     </>

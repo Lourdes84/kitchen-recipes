@@ -45,7 +45,7 @@ const Favoritos = () => {
           </Head>
 
           <CustomizedTitle text="Favoritos" />
-          <main>
+          <main className="main-wrapper">
               {list.length ? list.map((recipe, index) => (
                 <FavoriteCard
                     key={index}
@@ -57,16 +57,6 @@ const Favoritos = () => {
                 <EmptySection emptyContent text="Ups! No tienes favoritos agregados" />
               )}
           </main>
-          <style jsx>
-              {`
-                  main {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                  }
-              `}
-          </style>
       </>
     )
 }

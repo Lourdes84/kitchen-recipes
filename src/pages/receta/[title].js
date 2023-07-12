@@ -32,21 +32,10 @@ const Receta = () => {
             </Head>
 
             <CustomizedTitle text={title} />
-            <main>
+            <main className="recipe-wrapper">
                 <RecipeSteps recipe={recipe} />
                 <LinkButton href={url} text="Volver" />
             </main>
-
-            <style jsx>
-                {`
-                   main {
-                        display: flex;
-                        gap: 50px;
-                        justify-content: center;
-                        flex-wrap: wrap;
-                   }
-                `}
-            </style>
         </>
     )
 }

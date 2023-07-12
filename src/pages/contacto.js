@@ -14,19 +14,9 @@ const Contacto = () => {
           </Head>
 
           <CustomizedTitle text="Contacto" />
-          <main>
+          <main className="main-wrapper">
             <ContactForm />
           </main>
-          <style jsx>
-          {` 
-              main {
-                  display: flex;
-                  gap: 20px;
-                  flex-wrap: wrap;
-                  justify-content: center;
-              }
-          `}
-        </style>
       </>
     )
 }

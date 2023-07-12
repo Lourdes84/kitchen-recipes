@@ -6,21 +6,10 @@ const Almuerzos = () => {
     return (
         <>
             <CustomizedTitle text="Almuerzos" />
-            <main>
+            <main className="main-wrapper">
                 <EmptySection inConstruction text="Esta página está en construcción" />
             </main>
-           
-        <style jsx>
-        {` 
-            main {
-                display: flex;
-                gap: 20px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        `}
-        </style>
-     </>
+        </>
       
     )
 }
