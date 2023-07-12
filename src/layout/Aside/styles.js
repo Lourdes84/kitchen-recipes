@@ -18,6 +18,8 @@ export const Block = styled.div`
 `
 
 export const Title = styled.div`
+    text-transform: uppercase;
+    font-weight: 600;
     width: 100%;
     height: ${(props) => props.tall ? '200px' : '50px'};
     display: flex;
@@ -28,7 +30,7 @@ export const Title = styled.div`
     background-color: #FEF7EA;
     border: 1px solid #FDC257;
     box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    padding: 0 15px;
+    padding: 15px;
 `
 
 export const ImageWrapper = styled.div`
@@ -61,6 +63,24 @@ export const PostWrapper = styled.div`
         flex-direction: column;
         padding-right: 0px;
     }
+`
+
+export const TitleNewsletter = styled.p`
+    text-align: center;
+`
+
+export const StyledInput = styled.input`
+    width: 180px;
+    height: 30px;
+    padding-left: 5px;
+`
+export const ErrorText = styled.span`
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    text-transform: none;
+    color: red;
 `
 
 export const StyledButton = styled.button`

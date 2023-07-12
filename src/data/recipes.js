@@ -279,7 +279,7 @@ export const recipes = [
     },
     {
         id: 12,
-        title: "Poke de salmón",
+        title: "Poke de salmon",
         img: "/images/healthy/healthy-03.webp",
         category: "Healthy",
         time: "75 min",
@@ -320,7 +320,7 @@ export const recipes = [
     },
     {
         id: 14,
-        title: "Tartar de atún",
+        title: "Tartar de atun",
         img: "/images/healthy/healthy-05.webp",
         category: "Healthy",
         time: "30 min",
@@ -360,7 +360,7 @@ export const recipes = [
     },
     {
         id: 16,
-        title: "Albóndigas vegetarianas",
+        title: "Albondigas vegetarianas",
         img: "/images/vegetarianas/vegetarian-01.webp",
         category: "Vegetariana",
         time: "30 min",
