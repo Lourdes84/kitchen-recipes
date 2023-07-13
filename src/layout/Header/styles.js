@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const HeaderWrapper = styled.header`
     width: 100%;
     height: 120px;
-    background-color: #000;
-    color: #fff;
+    background-color: ${props => props.theme.palette.common.black};
+    color: ${props => props.theme.palette.common.white};
     display: flex;
     justify-content: center;
 `

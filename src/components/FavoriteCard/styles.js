@@ -49,7 +49,7 @@ export const HeaderWrapper = styled.header`
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background-color: #FEF7EA;
+    background-color: ${props => props.theme.palette.primary.light};
     padding: 10px 0;
     margin-bottom: 10px;
 `

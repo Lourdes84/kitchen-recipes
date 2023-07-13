@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const TitleWrapper = styled.div`
     background-color: transparent;
-    border: 2px solid #FDC257;
+    border: 2px solid ${props => props.theme.palette.primary.main};
     font-weight: 700;
     line-height: 24px;
     padding: 23px 40px;
@@ -10,7 +10,7 @@ export const TitleWrapper = styled.div`
     position: relative;
 
     &:before {
-        background-color: #FEF7EA;
+        background-color: ${props => props.theme.palette.primary.light};
         content: "";
         height: calc(100% + 3px);
         position: absolute;

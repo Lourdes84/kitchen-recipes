@@ -27,7 +27,7 @@ export const HeaderWrapper = styled.div`
     flex-direction: column;
     gap: 20px;
     padding-bottom: 20px;
-    border-bottom: 2px dotted #FDC257;
+    border-bottom: 2px dotted ${props => props.theme.palette.primary.main};
 
     @media (max-width: 1350px) {
         margin-bottom: 20px;
@@ -42,8 +42,8 @@ export const FieldWrapper = styled.div`
 `
 export const StyledInput = styled(Field)` 
     height: ${props => props.inputMessage ? '100px' : '40px'};
-    border: 1px solid #FDC257;
-    background-color: #FEF7EA;
+    border: 1px solid ${props => props.theme.palette.primary.main};
+    background-color: ${props => props.theme.palette.primary.light};
 `
 
 export const StyledErrorMessage = styled(ErrorMessage)`
@@ -61,7 +61,7 @@ export const StyledButton = styled.button`
     padding: 0px 20px;
     border: none;
     text-transform: uppercase;
-    background-color: #FDC257;
+    background-color: ${props => props.theme.palette.primary.main};
     box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
     transition: .3s ease-in-out;
     cursor: pointer;

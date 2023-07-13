@@ -34,7 +34,7 @@ export const ImageWrapper = styled.div`
 
 export const StyledText = styled.h2`
     display: inline-block;
-    color: #FDC257;
+    color: ${props => props.theme.palette.primary.main};
     text-align: center;
     font-size: 35px;
     font-family: 'Righteous', serif;

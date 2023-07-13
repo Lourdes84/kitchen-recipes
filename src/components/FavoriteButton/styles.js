@@ -16,8 +16,8 @@ export const FavoriteWrapper = styled.div`
 export const AlertMessage = styled.div`
     position: absolute;
     top: -30px;
-    background-color: #FEF7EA;
-    border: 1px solid #FDC257;
+    background-color: ${props => props.theme.palette.primary.light};
+    border: 1px solid ${props => props.theme.palette.primary.main};
     padding: 5px;
 `
 

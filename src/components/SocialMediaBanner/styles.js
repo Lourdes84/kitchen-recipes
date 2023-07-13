@@ -9,7 +9,7 @@ export const BannerWrapper = styled.section`
     justify-content: center;
     align-items: center;
     margin: 40px 0;
-    color: #fff;
+    color: ${props => props.theme.palette.common.white};
     width: 100%;
     height: 300px;
     background-attachment: fixed;

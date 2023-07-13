@@ -4,8 +4,8 @@ export const IngredientsWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 60px;
-    background-color: #FEF7EA;
-    border: 1px solid #FDC257;
+    background-color: ${props => props.theme.palette.primary.light};
+    border: 1px solid ${props => props.theme.palette.primary.main};
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
@@ -38,7 +38,7 @@ export const InfoWrapper = styled.div`
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    background-color: #fff;
+    background-color: ${props => props.theme.palette.common.white};
     line-height: 1.5;
 
      @media (max-width: 1560px) {
@@ -53,8 +53,8 @@ export const List = styled.li`
 `
 
 export const NumberStep = styled.span`
-    border: 1px solid #FDC257;
-    background-color: #FEF7EA;
+    border: 1px solid ${props => props.theme.palette.primary.main};
+    background-color: ${props => props.theme.palette.primary.light};
     padding: 5px 10px;
     border-radius: 50%;
     margin-right: 10px;

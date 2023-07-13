@@ -8,7 +8,7 @@ export const RecipeCardWrapper = styled.div`
     justify-content: space-between;
     gap: 30px;
     padding-bottom: 30px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid ${props => props.theme.palette.common.black};
     overflow: hidden;
 
     @media( max-width: 1357px) {

@@ -10,7 +10,7 @@ export const SearchBarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid ${props => props.theme.palette.common.black};
 
     @media (max-width: 1200px) {
         padding: 0;

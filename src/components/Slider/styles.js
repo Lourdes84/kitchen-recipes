@@ -54,12 +54,12 @@ export const StyledLink = styled(Link)`
 export const FoodOptions = styled.div`
     width: 250px;
     height: 150px;
-    background-color: #000;
-    color: #fff;
+    background-color: ${props => props.theme.palette.common.black};
+    color: ${props => props.theme.palette.common.white};
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #fff;
+    border: 2px solid ${props => props.theme.palette.common.white};
     cursor: pointer;
 
     @media (max-width: 640px) {
@@ -81,7 +81,7 @@ export const ImageOption = styled.img`
 export const TitleOption = styled.div`
     position: absolute;
     font-size: 20px;
-    border: 1px solid #fff;
+    border: 1px solid ${props => props.theme.palette.common.white};
     padding: 5px 15px;
     border-radius: 15px;
     font-weight: 400;

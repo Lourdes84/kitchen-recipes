@@ -7,8 +7,8 @@ export const FooterWrapper = styled.footer`
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    color: #fff;
-    background-color: #000;
+    color: ${props => props.theme.palette.common.white};
+    background-color: ${props => props.theme.palette.common.black};
 `
 
 export const FooterInfo = styled.div`

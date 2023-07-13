@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const StyledLink = styled(Link)`
     background-color: transparent;
-    border: 1px solid #FDC257;
+    border: 1px solid ${props => props.theme.palette.primary.main};
     font-weight: 700;
     line-height: 24px;
     padding: 10px 23px;
@@ -15,7 +15,7 @@ export const StyledLink = styled(Link)`
     }
 
     &:before {
-        background-color: #FEF7EA;
+        background-color: ${props => props.theme.palette.primary.light};
         content: "";
         height: calc(100% + 3px);
         position: absolute;
@@ -27,7 +27,7 @@ export const StyledLink = styled(Link)`
     }
 
     &:hover&:before {
-        background-color: #FDC257;
+        background-color: ${props => props.theme.palette.primary.main};
         right: 0;
         top: 0;
     }

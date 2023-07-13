@@ -10,9 +10,9 @@ export const StyledNav = styled.nav`
     @media (max-width: 1200px) {
         width: 280px;
         height: 89vh;
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #000; 
+        background-color: ${props => props.theme.palette.common.white};
+        color: ${props => props.theme.palette.common.black};
+        border: 1px solid  ${props => props.theme.palette.common.black}; 
         position: absolute;
         left: 0;
         top: 119px;
@@ -44,7 +44,7 @@ export const StyledLink = styled(Link)`
     display: flex;
     align-items: center;
     gap: 5px;
-    color: #fff;
+    color: ${props => props.theme.palette.common.white};
     text-decoration: none;
 
     &::after {
@@ -55,7 +55,7 @@ export const StyledLink = styled(Link)`
         height: 2px;
         bottom: -4px;
         left: 0;
-        background-color: #fff;
+        background-color: ${props => props.theme.palette.common.white};
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
     }
@@ -64,16 +64,16 @@ export const StyledLink = styled(Link)`
         transform-origin: bottom left;
     }
     @media (max-width: 1200px) {
-        color: #000;
+        color: ${props => props.theme.palette.common.black};
     }
 `
 export const StyledDropdown = styled.ul`
     display: flex;
     flex-direction: column;
     width: 240px;
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
+    background-color: ${props => props.theme.palette.common.white};
+    color: ${props => props.theme.palette.common.black};
+    border: 1px solid ${props => props.theme.palette.common.black};
     position: absolute;
     z-index: 100;
 
@@ -108,6 +108,6 @@ export const StyledLinkDropdown = styled.li`
     margin-bottom: 1px;
    
     &:hover {
-        background: #FEF7EA;
+        background: ${props => props.theme.palette.primary.light};
     }
 `
