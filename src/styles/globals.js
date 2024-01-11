@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         overflow-x: hidden;
         position: relative;
-        padding-bottom: 100px;
+        padding-bottom: 170px;
         min-height: 100vh;
         font-family: 'Crimson Text';
     }
