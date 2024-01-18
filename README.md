@@ -42,11 +42,11 @@ Kitchen recipes is a web application developed in Next.js that allows you to exp
 Currently completed.
 
 ### License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [License](LICENSE.md) file for details.
 
 ### Important Links
 
-- [Live Demo](https://kitchen-recipes.netlify.app/){:target="_blank"}
+- <a href="https://kitchen-recipes.netlify.app/" target="_blank">Live Demo</a>
 
 ### Contact
 
