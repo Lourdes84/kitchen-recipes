@@ -8,7 +8,7 @@ Kitchen recipes is a web application developed in Next.js that allows you to exp
 
 ### Visual Demonstration
 
-![Screenshot Home](/images/screencapture-kitchen.png)
+![Screenshot Home](screenshots/screencapture-kitchen.png)
 
 ### Usage Instructions
 
