@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kitchen recipes - Barriga llena corazón contento
 
-## Getting Started
+## Explore and Save Your Favorite Recipes
 
-First, run the development server:
+### Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Kitchen recipes is a web application developed in Next.js that allows you to explore a wide variety of recipes and save your favorites using LocalStorage.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Visual Demonstration
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![Screenshot Home](/images/screencapture-kitchen.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Usage Instructions
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository: `git clone https://github.com/Lourdes84/kitchen-recipes.git`
+2. Install dependencies: `npm install`
+3. Start the application: `npm run dev`
 
-## Learn More
+#### System Requirements
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js (v14.0.0 or higher)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Search recipes by name.
+- Detailed view for each recipe.
+- Add/remove recipes to/from the favorites list.
+- Responsive web design.
 
-## Deploy on Vercel
+### Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js
+- React
+- LocalStorage
+- Formik
+- Styled components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Project Status
+
+Currently completed.
+
+### License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+### Important Links
+
+- [Live Demo](https://kitchen-recipes.netlify.app/){:target="_blank"}
+
+### Contact
+
+For questions or collaborations, contact me at lourdes.gc84@gmail.com
